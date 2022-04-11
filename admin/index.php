@@ -1,4 +1,4 @@
-<?php include '../includes/config.php' ?>
+<?php include './assets/includes/config.php' ?>
 
 <head>
     <meta charset="UTF-8">
