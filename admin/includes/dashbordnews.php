@@ -17,7 +17,7 @@
                     <th scope="col">title</th>
                     <th scope="col">description</th>
                     <th scope="col">category</th>
-                    <th scope="col">Edit</th>
+
                     <th scope="col">Deleted</th>
                 </tr>
             </thead>
@@ -28,12 +28,12 @@
                 ?>
                     <tr>
 
-                        <th scope="col"><?php echo $row['img'] ?></th>
+                        <th scope="col"><img src="../uploads/<?php echo $row['img'] ?>" alt="shabaka nea gullm" /></th>
                         <th scope="col"><?php echo $row['title'] ?></th>
                         <th scope="col"><?php echo $row['dsc'] ?></th>
                         <th scope="col"><?php echo $row['category_title'] ?></th>
-                        <th scope="col"><a href="./assets/includes/edit.php?edite=<?php echo $row['id'] ?>">Edit</a></th>
-                        <th scope="col"><a href="./assets/includes/delete.php?delete=<?php echo $row['id'] ?>">Deleted</a></th>
+
+                        <th scope="col"><a href="./delete.php?delete=<?php echo $row['id'] ?>">Deleted</a></th>
 
                     </tr>
                 <?php } ?>

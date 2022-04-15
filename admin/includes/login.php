@@ -35,7 +35,7 @@
                             $query =mysqli_query($db,"SELECT * FROM `admin` WHERE `admin_username` = '$username' AND `admin_password` = '$password'");
                             if($query->num_rows > 0){
                               
-                                header("location:./assets/includes/dashbordnews.php");
+                                header("location:./includes/dashbordnews.php");
                             }
                             else{
                                 echo "<p class='bg-danger'>Invalid Username or Password</p>";

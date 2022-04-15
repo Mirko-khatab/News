@@ -1,4 +1,4 @@
-<?php include './assets/includes/config.php' ?>
+<?php include './includes/config.php' ?>
 
 <head>
     <meta charset="UTF-8">
@@ -13,7 +13,7 @@
     <div class="contianer">
         <?php
        
-            include './assets/includes/login.php';
+            include './includes/login.php';
   
      
         ?>
