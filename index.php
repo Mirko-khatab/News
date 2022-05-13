@@ -7,7 +7,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title></title>
+    <title>News</title>
     <!-- plugin css for this page -->
     <link rel="stylesheet" href="./assets/vendors/mdi/css/materialdesignicons.min.css" />
     <link rel="stylesheet" href="assets/vendors/aos/dist/aos.css/aos.css" />
@@ -66,7 +66,7 @@
                 <div class="container">
                     <div class="row" data-aos="fade-up">
                         <?php
-                        $query = mysqli_query($db, "SELECT * FROM news ORDER BY id DESC LIMIT 1");
+                        $query = mysqli_query($db, "SELECT * FROM newss ORDER BY id DESC LIMIT 1");
                         while ($row = mysqli_fetch_assoc($query)) {
 
                         ?>
@@ -99,7 +99,7 @@
                                     <h2>Latest news</h2>
 
                                     <?php
-                                    $query = mysqli_query($db, "SELECT * FROM news ORDER BY id DESC LIMIT 3");
+                                    $query = mysqli_query($db, "SELECT * FROM newss ORDER BY id DESC LIMIT 3");
                                     while ($row = mysqli_fetch_assoc($query)) {
 
                                     ?>
@@ -153,7 +153,7 @@
                                 <div class="card-body">
                                     <?php
                                     $id = $_GET['id'];
-                                    $query = mysqli_query($db, "SELECT * FROM news WHERE catagory='$id' ORDER BY id DESC");
+                                    $query = mysqli_query($db, "SELECT * FROM newss WHERE category='$id' ORDER BY id DESC");
                                     while ($row = mysqli_fetch_assoc($query)) {
                                     ?>
                                         <div class="row">

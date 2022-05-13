@@ -1,6 +1,6 @@
 <?php
 
-$db=mysqli_connect('localhost','root','','News');
+$db=mysqli_connect('localhost','root','','news');
 if(!$db){
     die("Connection failed: ".mysqli_connect_error());
 }
